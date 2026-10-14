@@ -1,0 +1,65 @@
+name: Relatar um bug
+description: Algo no FACE não funciona como deveria.
+labels: [bug]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Versão do FACE
+      description: A versão no rodapé da home do FACE, ou a saída de `face --version`.
+      placeholder: "2026.10.12"
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: Sistema
+      options:
+        - macOS (Apple Silicon)
+        - Linux x86_64
+        - Linux arm64
+        - Windows x86_64
+    validations:
+      required: true
+  - type: dropdown
+    id: agent
+    attributes:
+      label: Agente
+      description: O agente da sessão onde aconteceu, ou None.
+      options:
+        - Claude Code
+        - Codex
+        - Copilot
+        - Cursor
+        - Antigravity
+        - OpenCode
+        - Qwen Code
+        - None
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: O que aconteceu
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Passos para reproduzir
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: O que você esperava
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Log
+      description: Opcional. O que o `face` escreveu no terminal, sem tokens nem outros segredos.
+      render: text
+    validations:
+      required: false

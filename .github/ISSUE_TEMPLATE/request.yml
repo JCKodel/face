@@ -1,0 +1,24 @@
+name: Request
+description: Something you want FACE to do.
+labels: [request]
+body:
+  - type: textarea
+    id: want
+    attributes:
+      label: What you want to do
+    validations:
+      required: true
+  - type: textarea
+    id: today
+    attributes:
+      label: What happens today
+      description: Optional. How you do it now, or where FACE stops you.
+    validations:
+      required: false
+  - type: input
+    id: version
+    attributes:
+      label: FACE version
+      description: Optional. The version at the bottom of the FACE home.
+    validations:
+      required: false
