@@ -16,9 +16,11 @@ body:
       label: System
       options:
         - macOS (Apple Silicon)
+        - macOS (Intel)
         - Linux x86_64
         - Linux arm64
         - Windows x86_64
+        - Windows arm64
     validations:
       required: true
   - type: dropdown

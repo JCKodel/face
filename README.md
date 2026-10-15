@@ -16,7 +16,7 @@ the downloads: <https://face.kodel.com.br>.
 
 ## Install
 
-On macOS (Apple Silicon) or Linux, with [Homebrew](https://brew.sh):
+On macOS or Linux, with [Homebrew](https://brew.sh):
 
 ```sh
 brew install jckodel/face/face
@@ -62,9 +62,11 @@ This is the manual way. The zips are on
 [Releases](https://github.com/JCKodel/face/releases), one per platform:
 
 - `face-<v>-darwin-arm64.zip` (macOS, Apple Silicon)
+- `face-<v>-darwin-amd64.zip` (macOS, Intel)
 - `face-<v>-linux-amd64.zip` (Linux x86_64)
 - `face-<v>-linux-arm64.zip` (Linux arm64)
 - `face-<v>-windows-amd64.zip` (Windows x86_64)
+- `face-<v>-windows-arm64.zip` (Windows arm64)
 
 Download the one for your platform, unzip it in the folder that holds your
 projects and run `face` there, with nothing to rename:
